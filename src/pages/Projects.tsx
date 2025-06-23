@@ -38,7 +38,7 @@ const Projects = () => {
       id: 1,
       title: "DevDotJobs - Job Portal",
       description: "A job portal for developers to find and post job listings.",
-      image:devdotjobs,
+      image:"/uploads/devdotjobs.png",
       tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       code: "https://github.com/divanshArora3/dev.jobs",
       category: "web"
@@ -47,7 +47,7 @@ const Projects = () => {
       id: 2,
       title: "Divansh's Blog",
       description: "Machine learning model to detect and classify oral cancer levels from images.",
-      image: blog,
+      image: "/uploads/blog.png",
       tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       code: "https://github.com/divanshArora3/dev.jobs",
       category: "web"
@@ -56,7 +56,7 @@ const Projects = () => {
       id: 3,
       title: "Recordmate",
       description: "A web application for recording and sending transcripts automatically ",
-      image:recordmate,
+      image:"/uploads/recordmate.png",
       tags: ["React.js", "Puppeteer","JWT","Node.js", "MongoDb", "Express.js"],
        code: "https://github.com/divanshArora3/RECORDMATE",
       category: "web"
@@ -65,7 +65,7 @@ const Projects = () => {
       id: 4,
       title: "FitnessGuru",
       description: "FitnessGuru is a full-stack fitness tracking and workout management application designed to help users stay on top of their health and training goals. It allows users to create personalized workout routines, log daily exercises, track progress over time, and stay motivated through a clean, user-friendly dashboard.",
-      image:fitness,
+      image:"/uploads/fittness.png",
       tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       code: "https://github.com/divanshArora3/FitnessGuru",
       category: "web"
@@ -74,7 +74,7 @@ const Projects = () => {
       id: 5,
       title: "Weather app",
       description: "Weather Report is a responsive web application that allows users to get real-time weather updates for any city around the world. Built using HTML, CSS, and JavaScript, it fetches data from the OpenWeatherMap API and displays key weather parameters in a clean, user-friendly interface.",
-      image: weather,
+      image: "/uploads/weather.png",
       tags: ["JavaScript", "Node.js", "html","CSS"],
       code: "https://github.com/divanshArora3/Weather_Report",
       category: "web"
@@ -83,7 +83,7 @@ const Projects = () => {
       id: 6,
       title: "DSA Tracker",
       description: "A website that contains important questions for data structure and algorithms with many features like community, goals, compiler, etc.",
-      image: dsa,
+      image:"/uploads/dsa.png",
       tags: ["ReactGA", "Node", "HTML","BootStrap-CSS","Monaco","Font Awesome"],
       code: "https://github.com/divanshArora3/DSA-Tracker",
       category: "web"
@@ -92,7 +92,7 @@ const Projects = () => {
       id: 7,
       title: "attendance-report-system",
       description: "Python-based application that uses OpenCV and face recognition to automatically mark student attendance through webcam input. It ensures accurate, real-time attendance logging and generates reports that can be saved for future records.",
-      image: attendance,
+      image: "/uploads/attendance.png",
       tags: ["Pyhton", "OpenCv","Machine Learning"],
       code: "https://github.com/divanshArora3/attendance-report-system",
       category: "ml"
@@ -101,7 +101,7 @@ const Projects = () => {
       id: 8,
       title: "Obstacle avoiding robot",
       description: "A dashboard for monitoring and controlling smart home devices.",
-      image:iot,
+      image:"/uploads/iot.png",
       tags: ["C", "IoT", "NArdiuno"],
       code: "https://github.com/divanshArora3/Obstacle_avoiding",
       category: "iot"
