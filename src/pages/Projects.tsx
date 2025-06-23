@@ -3,6 +3,16 @@ import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
 import { AnimatedText } from "@/components/AnimatedText";
 import ProjectCard from "@/components/ProjectCard";
+import blog from '/uploads/blog.png'; // Adjust path relative to your file
+import devdotjobs from '/uploads/devdotjobs.png'
+import recordmate from '/uploads/recordmate.png'; // Adjust path relative to your file
+import fitness from '/uploads/fittness.png'; // Adjust path relative to your file
+import weather from '/uploads/weather.png'; // Adjust path relative to your file
+import dsa from '/uploads/dsa.png'; // Adjust path relative to your file
+import iot from '/uploads/iot.png'; // Adjust path relative to your file
+import attendance from '/uploads/attendance.png'; // Adjust path relative to your file
+
+
 import { 
   Bot, 
   MonitorSmartphone,
@@ -28,7 +38,7 @@ const Projects = () => {
       id: 1,
       title: "DevDotJobs - Job Portal",
       description: "A job portal for developers to find and post job listings.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457561397-cc7268b6-68c5-452c-a45c-9bc3f1287f20.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2MDIxOTYsIm5iZiI6MTc1MDYwMTg5NiwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NTYxMzk3LWNjNzI2OGI2LTY4YzUtNDUyYy1hNDVjLTliYzNmMTI4N2YyMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyMlQxNDE4MTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01N2U3YzcwNjE4ZjY0YTEwNmQ3ZDEyM2Y4NzhkYjdkOTA3ODYxZjIwZDViZmZjYzgxNmY1MjAzZWMwNTQ1ZTYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.S0gZRNipQ2hf671uPvmHHd_GkBfXOVVDTk6GyJ5JXYY",
+      image:devdotjobs,
       tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       code: "https://github.com/divanshArora3/dev.jobs",
       category: "web"
@@ -37,7 +47,7 @@ const Projects = () => {
       id: 2,
       title: "Divansh's Blog",
       description: "Machine learning model to detect and classify oral cancer levels from images.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457561005-807c0751-92ef-4964-81fc-ecd6bffe4182.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2MDIxNDIsIm5iZiI6MTc1MDYwMTg0MiwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NTYxMDA1LTgwN2MwNzUxLTkyZWYtNDk2NC04MWZjLWVjZDZiZmZlNDE4Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyMlQxNDE3MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ODA2ZGMyZTYwMDI2ZjRlMTllMThjNDFlMmZlM2I0NjdjMDFmYjQ2MzdhYTNmMzUzYWQ0OTAxMGJiNjQxMGQ3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.I2qQqlm3TG_7k99wyhRDb0VzjTLB3-XY0zRGg3rWBbo",
+      image: blog,
       tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       code: "https://github.com/divanshArora3/dev.jobs",
       category: "web"
@@ -46,7 +56,7 @@ const Projects = () => {
       id: 3,
       title: "Recordmate",
       description: "A web application for recording and sending transcripts automatically ",
-      image: "https://private-user-images.githubusercontent.com/150253488/457756044-80f8f668-489c-4e74-b120-17b9e3f94f34.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2NTk1NjUsIm5iZiI6MTc1MDY1OTI2NSwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NzU2MDQ0LTgwZjhmNjY4LTQ4OWMtNGU3NC1iMTIwLTE3YjllM2Y5NGYzNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyM1QwNjE0MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MjBiN2ZhOTE5Njk1OTc4ZjViMDJlODIwMjYyNzQ4YjI0ZDFkYmQ4ZTFkYWEzYzg5MGI1Zjk3NDIzOWU3YThhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7G8-zldoWzAnN8Fg8EuwusSd2NZRHuQX8Q5h2NM3vII",
+      image:recordmate,
       tags: ["React.js", "Puppeteer","JWT","Node.js", "MongoDb", "Express.js"],
        code: "https://github.com/divanshArora3/RECORDMATE",
       category: "web"
@@ -55,7 +65,7 @@ const Projects = () => {
       id: 4,
       title: "FitnessGuru",
       description: "FitnessGuru is a full-stack fitness tracking and workout management application designed to help users stay on top of their health and training goals. It allows users to create personalized workout routines, log daily exercises, track progress over time, and stay motivated through a clean, user-friendly dashboard.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457760261-4f70f37a-bc71-466c-bc67-7977c2e321f0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2NjAzNDEsIm5iZiI6MTc1MDY2MDA0MSwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NzYwMjYxLTRmNzBmMzdhLWJjNzEtNDY2Yy1iYzY3LTc5NzdjMmUzMjFmMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyM1QwNjI3MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ZjM2ODExNDQxNzRjMWUyNjQ3MDRjM2FlMjU2MDE0MWQzNGI3NjlhN2RlMzNmMjhjMTU2OTVmZWI5NjQxZWExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.SQjp0T8Jrx6AlDMSsxEXyExLMK_nfiFNJnCg8d7vuxo",
+      image:fitness,
       tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       code: "https://github.com/divanshArora3/FitnessGuru",
       category: "web"
@@ -64,7 +74,7 @@ const Projects = () => {
       id: 5,
       title: "Weather app",
       description: "Weather Report is a responsive web application that allows users to get real-time weather updates for any city around the world. Built using HTML, CSS, and JavaScript, it fetches data from the OpenWeatherMap API and displays key weather parameters in a clean, user-friendly interface.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457762247-7803fa13-b8d7-45aa-bb7e-e0a65f5b319b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2NjA3NDksIm5iZiI6MTc1MDY2MDQ0OSwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NzYyMjQ3LTc4MDNmYTEzLWI4ZDctNDVhYS1iYjdlLWUwYTY1ZjViMzE5Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyM1QwNjM0MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZWNmN2QzN2ExMDI1NGNjNTIyOGZkNmExYjIxNGJkZGFjZTA5OGQwNmM5ZjVjYTI0NjI2MjU5ZGMyYzAyNDEyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.i7M-p64Vr9lx8juy7PRnneFFZTiz0lqrbJ-WpIsQRSk",
+      image: weather,
       tags: ["JavaScript", "Node.js", "html","CSS"],
       code: "https://github.com/divanshArora3/Weather_Report",
       category: "web"
@@ -73,7 +83,7 @@ const Projects = () => {
       id: 6,
       title: "DSA Tracker",
       description: "A website that contains important questions for data structure and algorithms with many features like community, goals, compiler, etc.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457763780-57b8dd67-25ba-4c39-beeb-d8547c66ce7e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2NjExOTEsIm5iZiI6MTc1MDY2MDg5MSwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NzYzNzgwLTU3YjhkZDY3LTI1YmEtNGMzOS1iZWViLWQ4NTQ3YzY2Y2U3ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyM1QwNjQxMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYmYxNWQ0ZDU5OTYxYzAxMzJhMDU5MWM5NzZhZDc1ZTk5NjcyNDYwMDgyYTY1MTc4Nzk4ZjVmMTQ5ZDUwN2IwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.xX_7unppEoMn4cNA_TIcGDU-plFs6AkKjfrKwmtTAl4",
+      image: dsa,
       tags: ["ReactGA", "Node", "HTML","BootStrap-CSS","Monaco","Font Awesome"],
       code: "https://github.com/divanshArora3/DSA-Tracker",
       category: "web"
@@ -82,7 +92,7 @@ const Projects = () => {
       id: 7,
       title: "attendance-report-system",
       description: "Python-based application that uses OpenCV and face recognition to automatically mark student attendance through webcam input. It ensures accurate, real-time attendance logging and generates reports that can be saved for future records.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457768755-6550fc43-6d41-4491-b76e-b96895072694.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2NjE5MTEsIm5iZiI6MTc1MDY2MTYxMSwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NzY4NzU1LTY1NTBmYzQzLTZkNDEtNDQ5MS1iNzZlLWI5Njg5NTA3MjY5NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyM1QwNjUzMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNWQ1NDEzN2Y1YTgyYmZhOTYzOGY3NDBhNGE5YmEwMjk4MDFmNWZhNzE1MzQ1NDI0ZTc2NzYwMmFkZjk5OWQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.26ap0QBjKgVg7wTs_6TSr0G8Z5tdwRi-QKdvCw_STx4",
+      image: attendance,
       tags: ["Pyhton", "OpenCv","Machine Learning"],
       code: "https://github.com/divanshArora3/attendance-report-system",
       category: "ml"
@@ -91,7 +101,7 @@ const Projects = () => {
       id: 8,
       title: "Obstacle avoiding robot",
       description: "A dashboard for monitoring and controlling smart home devices.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457769527-938c6b7e-464b-497b-997f-d2225363ae72.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2NjIxMDIsIm5iZiI6MTc1MDY2MTgwMiwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NzY5NTI3LTkzOGM2YjdlLTQ2NGItNDk3Yi05OTdmLWQyMjI1MzYzYWU3Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyM1QwNjU2NDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MjM5Y2RjNzI5NjNkZmMyMzlhNTE5Njc0MTYyOTM2ZDU0NWQ2YjI3NjY0MDcxZDQ5ZjRhMzI1MTdiMGFlOTZjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.athT10hPamtIiNdGUg5WBV2kOKr97LAWjVw_3S6Qv4I",
+      image:iot,
       tags: ["C", "IoT", "NArdiuno"],
       code: "https://github.com/divanshArora3/Obstacle_avoiding",
       category: "iot"
