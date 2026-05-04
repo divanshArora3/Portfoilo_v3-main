@@ -50,8 +50,8 @@ const Resume = () => {
   const experience = [
     {
       position: "Software Developer intern",
-      company: "Jarvis Technology and consulting private limited",
-      duration: "June 2025 - July-2025",
+      company: "Sigmoid Analytics",
+      duration: "Jan 2026 - July-2026",
       description: "Working as a software developer on various projects, specializing in web development and testing solutions.",
       responsibilities: [
        " Developed internal platforms using the MERN stack (MongoDB, Express.js, React.js, Node.js) for HR and political campaign management systems.",
