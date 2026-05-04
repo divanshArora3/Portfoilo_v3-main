@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website designed to showcase my professi
 🌐 **Live Demo**: https://portfoilo-rho-fawn.vercel.app
 
 ## 🛠 Technologies Stack
-- **Frontend Framework**: React 18
+- **Frontend Framework**: React-18
 - **Language**: TypeScript
 - **Build Tool**: Vite
 - **Styling**: CSS (not Tailwind)
