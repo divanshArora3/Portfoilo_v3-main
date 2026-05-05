@@ -1,14 +1,26 @@
-
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import HeroSection from "@/components/HeroSection";
 import { motion } from "framer-motion";
-import { ArrowRight, Code, GraduationCap, Briefcase, Star, ExternalLink, Github } from "lucide-react";
+import { 
+  ArrowRight, 
+  Code, 
+  GraduationCap, 
+  Briefcase, 
+  Star, 
+  Github, 
+  Database, 
+  Cloud, 
+  Zap, 
+  Heart 
+} from "lucide-react";
 import { Link } from "react-router-dom";
+
+// Image Imports
 import recordmate from "/uploads/recordmate.png";
 import blog from "/uploads/blog.png";
 import devDotJobs from "/uploads/devdotjobs.png";
-import supplychain from "/uploads/supplychain.png"; // Add the correct path to the supply chain image
+import supplychain from "/uploads/supplychain.png";
 
 const Index = () => {
   useEffect(() => {
@@ -17,49 +29,49 @@ const Index = () => {
 
   const featuredProjects = [
     {
-      title: "DevDotJobs - Job Portal",
-      description: "A job portal for developers to find and post job listings.",
-      image:devDotJobs, 
-     tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
-      link: "/projects",
-      code: "https://github.com/divanshArora3/dev.jobs"
-    },
-    {
       title: "Retail Supply Chain Intelligence",
       description: "End-to-end data pipeline utilizing Medallion Architecture to transform raw supply chain telemetry into actionable insights via Azure Databricks and Spark.",
-      image: supplychain, // Update this variable name to match your imports
+      image: supplychain,
       tags: ["Azure Databricks", "PySpark", "ADLS Gen2", "Unity Catalog", "SQL"],
       link: "/projects",
       code: "https://github.com/divanshArora3/Retail-Supply-Chain-Intelligence-Platform"
     },
     {
+      title: "DevDotJobs - Job Portal",
+      description: "A comprehensive job portal for developers featuring secure authentication and real-time job posting capabilities.",
+      image: devDotJobs, 
+      tags: ["Express.js", "React.js", "Node.js", "MongoDB", "JWT"],
+      link: "/projects",
+      code: "https://github.com/divanshArora3/dev.jobs"
+    },
+    {
       title: "Divansh's Blog",
-      description: "Machine learning model to detect and classify oral cancer levels from images.",
+      description: "A full-stack blogging platform with a clean UI and markdown support for technical writing and sharing engineering insights.",
       image: blog,
-      tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
+      tags: ["Express.js", "React.js", "Node.js", "MongoDB", "Tailwind"],
       link: "/projects",
       code: "https://github.com/divanshArora3/Divansh-s-blog-FullStack"
     },
     {
       title: "Recordmate",
-      description: "A web application for recording and sending transcripts automatically ",
+      description: "A web application for recording and sending transcripts automatically with integrated workflow automation.",
       image: recordmate,
-      tags: ["React.js", "Puppeteer","JWT","Node.js", "MongoDb", "Express.js"],
+      tags: ["React.js", "Puppeteer", "Node.js", "MongoDb", "Express.js"],
       link: "/projects",
       code: "https://github.com/divanshArora3/RECORDMATE"
     },
   ];
 
   const techStack = [
-    { name: "JavaScript", proficiency: 90 },
-    { name: "C/C++",},
-    { name: "React.js"},
-    { name: "Node.js"},
-    { name: "MongoDb"},
-    { name: "Next.js"},
-    { name: "Postman"},
-    { name: "Git/Github"},
-    { name: "Python"},
+    { name: "Python & PySpark", proficiency: 90 },
+    { name: "SQL (Snowflake/PostgreSQL)", proficiency: 95 },
+    { name: "Azure & GCP Cloud", proficiency: 80 },
+    { name: "Databricks & Delta Lake", proficiency: 85 },
+    { name: "React.js & Next.js", proficiency: 85 },
+    { name: "Node.js & Express", proficiency: 80 },
+    { name: "Git & CI/CD", proficiency: 90 },
+    { name: "C/C++", proficiency: 85 },
+    { name: "MongoDB", proficiency: 80 },
   ];
 
   return (
@@ -77,11 +89,11 @@ const Index = () => {
             className="text-center mb-16"
           >
             <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400 mb-4">
-              About Me
+              Overview
             </span>
             <h2 className="text-4xl font-bold mb-6">Who I Am</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground">
-              I'm an Instrumentation and Control student. Passionate about programming, AI integration, and building innovative web applications.
+              I'm an Instrumentation and Control student at NIT Jalandhar and a Data Engineering Intern at Sigmoid. I specialize in building scalable data infrastructure, optimized ETL pipelines, and innovative software solutions.
             </p>
           </motion.div>
 
@@ -91,16 +103,14 @@ const Index = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="glass-panel p-8 rounded-lg"
+              className="glass-panel p-8 rounded-lg border border-white/5 hover:border-teal-500/30 transition-colors"
             >
               <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
-                <Code className="w-8 h-8 text-teal-400" />
+                <Database className="w-8 h-8 text-teal-400" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">
-                Web Development
-              </h3>
-              <p className="text-muted-foreground text-center">
-                Experienced in building modern, responsive web applications using React.js, Next.js, and Node.js.
+              <h3 className="text-xl font-semibold mb-4 text-center">Data Engineering</h3>
+              <p className="text-muted-foreground text-center text-sm">
+                Designing end-to-end pipelines using Spark and Databricks. Expert in Medallion architecture and cloud data governance.
               </p>
             </motion.div>
 
@@ -109,16 +119,14 @@ const Index = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="glass-panel p-8 rounded-lg"
+              className="glass-panel p-8 rounded-lg border border-white/5 hover:border-teal-500/30 transition-colors"
             >
               <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
-                <GraduationCap className="w-8 h-8 text-teal-400" />
+                <Code className="w-8 h-8 text-teal-400" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">
-                Computer Science
-              </h3>
-              <p className="text-muted-foreground text-center">
-                Strong foundation in algorithms, data structures, and programming principles.
+              <h3 className="text-xl font-semibold mb-4 text-center">Software Engineering</h3>
+              <p className="text-muted-foreground text-center text-sm">
+                Full-stack development with the MERN stack. Building responsive, secure, and user-centric web applications.
               </p>
             </motion.div>
 
@@ -127,35 +135,17 @@ const Index = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="glass-panel p-8 rounded-lg"
+              className="glass-panel p-8 rounded-lg border border-white/5 hover:border-teal-500/30 transition-colors"
             >
               <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
-                <Briefcase className="w-8 h-8 text-teal-400" />
+                <Cloud className="w-8 h-8 text-teal-400" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">
-                AI & Machine Learning
-              </h3>
-              <p className="text-muted-foreground text-center">
-                Specializing in artificial intelligence and machine learning algorithms and applications.
+              <h3 className="text-xl font-semibold mb-4 text-center">Cloud & AI</h3>
+              <p className="text-muted-foreground text-center text-sm">
+                Implementing AI solutions and GenAI/RAG systems on Azure and GCP to solve complex business problems.
               </p>
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="mt-12 text-center"
-          >
-            <Link
-              to="/about"
-              className="inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg font-medium hover:bg-opacity-90 transition-all"
-            >
-              More About Me
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </motion.div>
         </div>
       </section>
 
@@ -173,26 +163,23 @@ const Index = () => {
               Skills
             </span>
             <h2 className="text-4xl font-bold mb-6">Tech Stack</h2>
-            <p className="max-w-3xl mx-auto text-muted-foreground">
-              A collection of technologies I work with to build web applications and solve complex problems.
-            </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {techStack.map((tech, index) => (
               <motion.div
                 key={tech.name}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="glass-panel p-6 rounded-lg"
+                className="glass-panel p-6 rounded-lg border border-white/5"
               >
                 <div className="flex justify-between items-center mb-2">
-                  <h3 className="text-lg font-medium">{tech.name}</h3>
-                  <span className="text-sm text-muted-foreground">{tech.proficiency}%</span>
+                  <h3 className="text-sm font-medium">{tech.name}</h3>
+                  <span className="text-xs text-muted-foreground">{tech.proficiency}%</span>
                 </div>
-                <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
+                <div className="w-full h-1.5 bg-secondary rounded-full overflow-hidden">
                   <motion.div
                     className="h-full bg-teal-500"
                     initial={{ width: 0 }}
@@ -221,12 +208,9 @@ const Index = () => {
               Portfolio
             </span>
             <h2 className="text-4xl font-bold mb-6">Featured Projects</h2>
-            <p className="max-w-3xl mx-auto text-muted-foreground">
-              A selection of my recent web development and programming projects.
-            </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
             {featuredProjects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -234,62 +218,66 @@ const Index = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="glass-panel rounded-lg overflow-hidden"
+                className="glass-panel rounded-xl overflow-hidden flex flex-col h-full border border-white/5 hover:border-teal-500/30 transition-all"
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-56 overflow-hidden bg-muted">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
+                <div className="p-8 flex flex-col flex-grow">
+                  <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
+                  <p className="text-muted-foreground text-sm mb-6 flex-grow">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-8">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="text-xs py-1 px-3 bg-secondary rounded-full">
+                      <span key={tag} className="text-[10px] uppercase tracking-widest py-1 px-2.5 bg-teal-500/5 text-teal-400 border border-teal-500/10 rounded">
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center pt-4 border-t border-white/5">
                     <Link
                       to={project.link}
-                      className="inline-flex items-center text-teal-400 hover:text-teal-300 transition-colors"
+                      className="text-sm font-semibold text-teal-400 hover:text-teal-300 transition-colors flex items-center"
                     >
                       View Details
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                     <a
                       href={project.code}
-                      className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-muted-foreground hover:text-foreground transition-all"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Github className="mr-1.5 h-4 w-4" />
-                      Source Code
+                      <Github className="h-5 w-5" />
                     </a>
                   </div>
                 </div>
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
+      {/* Professional Acknowledgement Section */}
+      <section className="py-24">
+        <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mt-12 text-center"
+            className="max-w-4xl mx-auto"
           >
-            <Link
-              to="/projects"
-              className="inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg font-medium hover:bg-opacity-90 transition-all"
-            >
-              View All Projects
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+            <Zap className="w-10 h-10 text-teal-400 mx-auto mb-6" />
+            <h2 className="text-3xl font-bold mb-6">Professional Spotlight</h2>
+            <p className="text-muted-foreground leading-relaxed italic text-lg">
+              "Currently driving data innovation as a Data Engineering Intern at Sigmoid. Focused on large-scale cloud infrastructure, automated ETL pipelines, and the development of enterprise-grade RAG systems."
+            </p>
           </motion.div>
         </div>
       </section>
@@ -298,26 +286,25 @@ const Index = () => {
       <section className="py-24" id="contact">
         <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="glass-panel p-12 rounded-lg max-w-4xl mx-auto text-center"
+            className="glass-panel p-12 rounded-2xl max-w-4xl mx-auto text-center border border-teal-500/20 shadow-2xl shadow-teal-500/5"
           >
             <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-full mb-6 mx-auto">
               <Star className="w-8 h-8 text-teal-400" />
             </div>
-            <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              I'm currently available for freelance work and open to new opportunities.
-              If you have a project in mind or want to collaborate, let's connect!
+            <h2 className="text-4xl font-bold mb-4 text-white">Let's Build Something Great</h2>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto text-lg">
+              Whether it's a complex data pipeline, a modern web app, or an AI integration—I'm always open to new challenges and collaborations.
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center px-8 py-4 bg-teal-500 text-white rounded-lg font-medium hover:bg-opacity-90 transition-all"
+              className="inline-flex items-center px-8 py-4 bg-teal-500 text-white rounded-xl font-bold hover:bg-teal-600 transition-all hover:shadow-lg hover:shadow-teal-500/20 active:scale-95"
             >
               Get in Touch
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </motion.div>
         </div>
