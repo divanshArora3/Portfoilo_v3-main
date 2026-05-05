@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
 import { AnimatedText } from "@/components/AnimatedText";
-import { Code, GraduationCap, BookOpen, Coffee, User, Heart } from "lucide-react";
+import { Code, GraduationCap, BookOpen, Coffee, User, Heart, Database, Cloud } from "lucide-react";
 import InfoCard from "@/components/InfoCard";
 
 const About = () => {
@@ -11,15 +11,16 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: "C++", level: "Intermediate" },
-    { name: "Python", level: "Intermediate" },
-    { name: "JavaScript", level: "Intermediate" },
+    { name: "Python", level: "Advanced" },
+    { name: "SQL", level: "Advanced" },
+    { name: "PySpark", level: "Intermediate" },
+    { name: "Databricks", level: "Intermediate" },
+    { name: "Azure / GCP", level: "Intermediate" },
     { name: "React.js", level: "Intermediate" },
     { name: "Node.js", level: "Intermediate" },
-    { name: "Next.js", level: "Intermediate" },
+    { name: "GenAI / RAG", level: "Intermediate" },
+    { name: "C++", level: "Intermediate" },
     { name: "Machine Learning", level: "Intermediate" },
-    { name: "CSS", level: "Intermediate" },
-    { name: "AI", level: "Intermediate" },
   ];
 
   return (
@@ -40,7 +41,7 @@ const About = () => {
             </h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-muted-foreground">
-                I'm an Instrumentation and Control student passionate about creating innovative solutions through programming and technology.
+                I'm an Instrumentation and Control student and Data Engineering Intern passionate about building scalable data pipelines and AI-driven solutions.
               </p>
             </div>
           </motion.div>
@@ -50,14 +51,13 @@ const About = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              whileHover={{ boxShadow: "0 20px 25px -5px rgba(155, 135, 245, 0.15)" }}
             >
-              <div className="glass-panel h-full p-8 rounded-lg">
+              <div className="glass-panel h-full p-8 rounded-lg relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative w-full h-80 rounded-lg mb-8 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/20 to-blue-500/20"></div>
                   <img 
                     src="/uploads/me.png" 
-                    alt="Profile" 
+                    alt="Divansh Arora" 
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -71,28 +71,29 @@ const About = () => {
               className="flex flex-col justify-center"
             >
               <h2 className="text-3xl font-bold mb-6">
-                <AnimatedText text="Who am I?" once />
+                <AnimatedText text="The Journey" once />
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   I'm <motion.span 
                     className="text-brand-purple font-semibold"
                     whileHover={{ color: "#8B5CF6" }}
-                  >Divansh Arora</motion.span>, an Instrumentation and Control student at Nit Jalandhar, Punjab.
+                  >Divansh Arora</motion.span>, currently pursuing my degree at NIT Jalandhar and working as a **Data Engineering Intern at Sigmoid**.
                 </p>
                 <p>
-                  My journey in programming began with an interest in solving complex problems. This led me to explore various programming languages and technologies, with a focus on web development and artificial intelligence.
+                  My expertise lies at the intersection of Big Data and AI. I specialize in building robust ETL pipelines, managing cloud infrastructure on Azure and GCP, and leveraging tools like PySpark and Databricks to turn raw data into actionable insights.
                 </p>
                 <p>
-                  I'm passionate about building web applications and software that is not only functional but also intuitive and user-friendly. I believe in continuous learning and staying updated with the latest technologies.
+                  Beyond data engineering, I have a strong background in full-stack development (MERN) and a deep interest in **Generative AI** and **RAG-powered systems**, ensuring that the systems I build are not just functional, but intelligent.
                 </p>
                 <p>
-                  When I'm not coding, I enjoy exploring new technologies, solving algorithmic problems, contributing to open-source projects and playing video games.
+                  When I'm not optimizing queries or debugging pipelines, you'll find me solving algorithmic challenges, exploring the latest in GenAI, or enjoying a good video game.
                 </p>
               </div>
             </motion.div>
           </div>
 
+          {/* Professional Skills Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -100,34 +101,26 @@ const About = () => {
             className="mb-24"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-6">Professional Skills</h2>
+              <h2 className="text-3xl font-bold mb-6">Professional Expertise</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                These are the technologies and programming languages I've worked with and continue to develop expertise in.
+                My technical toolkit is focused on data orchestration, cloud architecture, and modern software engineering.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.1 * index }}
-                  whileHover={{ 
-                    scale: 1.05, 
-                    boxShadow: "0 10px 25px -5px rgba(155, 135, 245, 0.2)",
-                    y: -5
-                  }}
-                  className="glass-panel p-6 rounded-lg text-center"
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  className="glass-panel p-6 rounded-lg text-center border border-white/10 hover:border-brand-purple/50 transition-colors"
                 >
-                  <motion.h3 
-                    className="font-semibold mb-2"
-                    whileHover={{ color: "#9b87f5" }}
-                  >{skill.name}</motion.h3>
-                  <span className={`text-xs py-1 px-3 rounded-full ${
+                  <h3 className="font-semibold mb-2">{skill.name}</h3>
+                  <span className={`text-[10px] uppercase tracking-wider py-1 px-3 rounded-full ${
                     skill.level === 'Advanced' ? 'bg-brand-purple/20 text-brand-purple' :
-                    skill.level === 'Intermediate' ? 'bg-blue-500/20 text-blue-400' :
-                    'bg-green-500/20 text-green-400'
+                    'bg-blue-500/20 text-blue-400'
                   }`}>
                     {skill.level}
                   </span>
@@ -136,81 +129,56 @@ const About = () => {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-6">More About Me</h2>
-            </div>
+          {/* Info Cards Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <InfoCard icon={Database} title="Data Engineering">
+              <ul className="space-y-2 text-muted-foreground">
+                {["ETL/ELT Pipeline Design", "Cloud Data Warehousing", 
+                  "Big Data Processing (Spark)", "Real-time Data Streaming"].map((item, i) => (
+                  <motion.li key={i} className="flex items-center" whileHover={{ x: 5, color: "#9b87f5" }}>
+                    <Cloud className="h-4 w-4 text-brand-purple mr-2" />
+                    {item}
+                  </motion.li>
+                ))}
+              </ul>
+            </InfoCard>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <InfoCard icon={User} title="Personal Interests">
-                <ul className="space-y-2 text-muted-foreground">
-                  {["Exploring new technologies", "Solving algorithmic challenges", 
-                    "Open-source contributions", "Web development projects"].map((interest, i) => (
-                    <motion.li 
-                      key={i} 
-                      className="flex items-center"
-                      whileHover={{ x: 5, color: "#9b87f5" }}
-                    >
-                      <Heart className="h-4 w-4 text-brand-purple mr-2" />
-                      {interest}
-                    </motion.li>
-                  ))}
-                </ul>
-              </InfoCard>
+            <InfoCard icon={Code} title="Engineering Core">
+              <ul className="space-y-2 text-muted-foreground">
+                {["Clean Code & Design Patterns", "MERN Stack Development", 
+                  "RESTful API Architecture", "Version Control (Git/GitHub)"].map((item, i) => (
+                  <motion.li key={i} className="flex items-center" whileHover={{ x: 5, color: "#9b87f5" }}>
+                    <Coffee className="h-4 w-4 text-brand-purple mr-2" />
+                    {item}
+                  </motion.li>
+                ))}
+              </ul>
+            </InfoCard>
 
-              <InfoCard icon={Code} title="Coding Philosophy">
-                <ul className="space-y-2 text-muted-foreground">
-                  {["Clean and maintainable code", "Focus on user experience", 
-                    "Continuous learning and improvement", "Building with scalability in mind"].map((philosophy, i) => (
-                    <motion.li 
-                      key={i} 
-                      className="flex items-center"
-                      whileHover={{ x: 5, color: "#9b87f5" }}
-                    >
-                      <Coffee className="h-4 w-4 text-brand-purple mr-2" />
-                      {philosophy}
-                    </motion.li>
-                  ))}
-                </ul>
-              </InfoCard>
+            <InfoCard icon={GraduationCap} title="Education & Research">
+              <ul className="space-y-2 text-muted-foreground">
+                {["Instrumentation & Control (NITJ)", "Published Research in IEEE Sensors", 
+                  "SQL & Big Data Certifications", "Data Structures & Algorithms"].map((item, i) => (
+                  <motion.li key={i} className="flex items-center" whileHover={{ x: 5, color: "#9b87f5" }}>
+                    <BookOpen className="h-4 w-4 text-brand-purple mr-2" />
+                    {item}
+                  </motion.li>
+                ))}
+              </ul>
+            </InfoCard>
 
-              <InfoCard icon={GraduationCap} title="Education Journey">
-                <ul className="space-y-2 text-muted-foreground">
-                  {["Computer Science fundamentals", "Data structures and algorithms", 
-                    "Machine learning and AI", "Self-taught web development"].map((journey, i) => (
-                    <motion.li 
-                      key={i} 
-                      className="flex items-center"
-                      whileHover={{ x: 5, color: "#9b87f5" }}
-                    >
-                      <BookOpen className="h-4 w-4 text-brand-purple mr-2" />
-                      {journey}
-                    </motion.li>
-                  ))}
-                </ul>
-              </InfoCard>
-
-              <InfoCard icon={BookOpen} title="Future Goals">
-                <ul className="space-y-2 text-muted-foreground">
-                  {["Mastering advanced AI techniques", "Building impactful web applications", 
-                    "Contributing to open-source projects", "Exploring blockchain development"].map((goal, i) => (
-                    <motion.li 
-                      key={i} 
-                      className="flex items-center"
-                      whileHover={{ x: 5, color: "#9b87f5" }}
-                    >
-                      <GraduationCap className="h-4 w-4 text-brand-purple mr-2" />
-                      {goal}
-                    </motion.li>
-                  ))}
-                </ul>
-              </InfoCard>
-            </div>
-          </motion.div>
+            <InfoCard icon={User} title="Future Goals">
+              <ul className="space-y-2 text-muted-foreground">
+                {["Mastering Large-scale RAG Systems", "Architecting Data Lakes at Scale", 
+                  "Open Source Data Tooling", "Advanced ML Ops integration"].map((item, i) => (
+                  <motion.li key={i} className="flex items-center" whileHover={{ x: 5, color: "#9b87f5" }}>
+                    <Heart className="h-4 w-4 text-brand-purple mr-2" />
+                    {item}
+                  </motion.li>
+                ))}
+              </ul>
+            </InfoCard>
+          </div>
         </div>
       </section>
     </Layout>
