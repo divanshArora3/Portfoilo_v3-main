@@ -278,7 +278,7 @@ const Resume = () => {
             <div className="mt-4 pl-4 border-l-2 border-brand-purple/30">
               <h4 className="font-medium mb-2">Key Courses:</h4>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {edu.institution.includes("Presidency") ? (
+                {edu.institution.includes("Nit Jalandhar") ? (
                   <>
                     <li className="text-sm flex items-center">
                       <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
@@ -319,6 +319,7 @@ const Resume = () => {
                       <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
                       Computer Science
                     </li>
+                    
                   </>
                 )}
               </ul>

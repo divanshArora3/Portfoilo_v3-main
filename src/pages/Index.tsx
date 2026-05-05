@@ -5,6 +5,9 @@ import HeroSection from "@/components/HeroSection";
 import { motion } from "framer-motion";
 import { ArrowRight, Code, GraduationCap, Briefcase, Star, ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
+import recordmate from "/uploads/recordmate.png";
+import blog from "/uploads/blog.png";
+import devDotJobs from "/uploads/devdotjobs.png";
 
 const Index = () => {
   useEffect(() => {
@@ -15,15 +18,15 @@ const Index = () => {
     {
       title: "DevDotJobs - Job Portal",
       description: "A job portal for developers to find and post job listings.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457561397-cc7268b6-68c5-452c-a45c-9bc3f1287f20.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2MDIxOTYsIm5iZiI6MTc1MDYwMTg5NiwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NTYxMzk3LWNjNzI2OGI2LTY4YzUtNDUyYy1hNDVjLTliYzNmMTI4N2YyMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyMlQxNDE4MTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01N2U3YzcwNjE4ZjY0YTEwNmQ3ZDEyM2Y4NzhkYjdkOTA3ODYxZjIwZDViZmZjYzgxNmY1MjAzZWMwNTQ1ZTYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.S0gZRNipQ2hf671uPvmHHd_GkBfXOVVDTk6GyJ5JXYY",
-      tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
+      image:devDotJobs, 
+     tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       link: "/projects",
       code: "https://github.com/divanshArora3/dev.jobs"
     },
     {
       title: "Divansh's Blog",
       description: "Machine learning model to detect and classify oral cancer levels from images.",
-      image: "https://private-user-images.githubusercontent.com/150253488/457561005-807c0751-92ef-4964-81fc-ecd6bffe4182.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2MDIxNDIsIm5iZiI6MTc1MDYwMTg0MiwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NTYxMDA1LTgwN2MwNzUxLTkyZWYtNDk2NC04MWZjLWVjZDZiZmZlNDE4Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyMlQxNDE3MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ODA2ZGMyZTYwMDI2ZjRlMTllMThjNDFlMmZlM2I0NjdjMDFmYjQ2MzdhYTNmMzUzYWQ0OTAxMGJiNjQxMGQ3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.I2qQqlm3TG_7k99wyhRDb0VzjTLB3-XY0zRGg3rWBbo",
+      image: blog,
       tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       link: "/projects",
       code: "https://github.com/divanshArora3/Divansh-s-blog-FullStack"
@@ -31,7 +34,7 @@ const Index = () => {
     {
       title: "Recordmate",
       description: "A web application for recording and sending transcripts automatically ",
-      image: "https://private-user-images.githubusercontent.com/150253488/457756044-80f8f668-489c-4e74-b120-17b9e3f94f34.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA2NTk1NjUsIm5iZiI6MTc1MDY1OTI2NSwicGF0aCI6Ii8xNTAyNTM0ODgvNDU3NzU2MDQ0LTgwZjhmNjY4LTQ4OWMtNGU3NC1iMTIwLTE3YjllM2Y5NGYzNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyM1QwNjE0MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MjBiN2ZhOTE5Njk1OTc4ZjViMDJlODIwMjYyNzQ4YjI0ZDFkYmQ4ZTFkYWEzYzg5MGI1Zjk3NDIzOWU3YThhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7G8-zldoWzAnN8Fg8EuwusSd2NZRHuQX8Q5h2NM3vII",
+      image: recordmate,
       tags: ["React.js", "Puppeteer","JWT","Node.js", "MongoDb", "Express.js"],
       link: "/projects",
       code: "https://github.com/divanshArora3/RECORDMATE"
