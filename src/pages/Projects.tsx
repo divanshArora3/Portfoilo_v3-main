@@ -35,6 +35,7 @@ const Projects = () => {
 
   const projects = [
     {
+      
       id: 1,
       title: "DevDotJobs - Job Portal",
       description: "A job portal for developers to find and post job listings.",
@@ -42,6 +43,15 @@ const Projects = () => {
       tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       code: "https://github.com/divanshArora3/dev.jobs",
       category: "web"
+    },
+    {
+      id: 2,
+      title: "Retail Supply Chain Intelligence",
+      description: "End-to-end data pipeline utilizing Medallion Architecture to transform raw supply chain telemetry into actionable insights via Azure Databricks and Spark.",
+      image: "/uploads/supplychain.png",
+      tags: ["Azure Databricks", "PySpark", "ADLS Gen2", "Unity Catalog", "SQL"],
+      code: "https://github.com/divanshArora3/Retail-Supply-Chain-Intelligence-Platform",
+      category: "DE"
     },
     {
       id: 3,
@@ -97,25 +107,16 @@ const Projects = () => {
       code: "https://github.com/divanshArora3/attendance-report-system",
       category: "ml"
     },
-    {
-      id: 2,
-      title: "Retail Supply Chain Intelligence",
-      description: "End-to-end data pipeline utilizing Medallion Architecture to transform raw supply chain telemetry into actionable insights via Azure Databricks and Spark.",
-      image: "/uploads/supplychain.png",
-      tags: ["Azure Databricks", "PySpark", "ADLS Gen2", "Unity Catalog", "SQL"],
-      code: "https://github.com/divanshArora3/Retail-Supply-Chain-Intelligence-Platform",
-      category: "DE"
-    },
-    {
-      id: 10,
-      title: "Portfolio RAG Assistant",
-      description: "A Retrieval-Augmented Generation chatbot powered by Claude that answers questions about my portfolio, skills, projects, and experience. Uses vector embeddings for semantic search over resume data, showcasing production-grade GenAI architecture.",
-      image: "/uploads/placeholder.svg",
-      tags: ["RAG", "LangChain", "FAISS", "Claude API", "React.js"],
-      code: "https://github.com/divanshArora3",
-      demo: "/rag",
-      category: "genai"
-    },
+    // {
+    //   id: 10,
+    //   title: "Portfolio RAG Assistant",
+    //   description: "A Retrieval-Augmented Generation chatbot powered by Claude that answers questions about my portfolio, skills, projects, and experience. Uses vector embeddings for semantic search over resume data, showcasing production-grade GenAI architecture.",
+    //   image: "/uploads/placeholder.svg",
+    //   tags: ["RAG", "LangChain", "FAISS", "Claude API", "React.js"],
+    //   code: "https://github.com/divanshArora3",
+    //   demo: "/rag",
+    //   category: "genai"
+    // },
     {
       id: 9,
       title: "Obstacle avoiding robot",
