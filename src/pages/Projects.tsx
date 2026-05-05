@@ -44,7 +44,7 @@ const Projects = () => {
       category: "web"
     },
     {
-      id: 2,
+      id: 3,
       title: "Divansh's Blog",
       description: "Machine learning model to detect and classify oral cancer levels from images.",
       image: "/uploads/blog.png",
@@ -53,7 +53,7 @@ const Projects = () => {
       category: "web"
     },
     {
-      id: 3,
+      id: 4,
       title: "Recordmate",
       description: "A web application for recording and sending transcripts automatically ",
       image:"/uploads/recordmate.png",
@@ -62,7 +62,7 @@ const Projects = () => {
       category: "web"
     },
     {
-      id: 4,
+      id: 5,
       title: "FitnessGuru",
       description: "FitnessGuru is a full-stack fitness tracking and workout management application designed to help users stay on top of their health and training goals. It allows users to create personalized workout routines, log daily exercises, track progress over time, and stay motivated through a clean, user-friendly dashboard.",
       image:"/uploads/fittness.png",
@@ -71,7 +71,7 @@ const Projects = () => {
       category: "web"
     },
     {
-      id: 5,
+      id: 6,
       title: "Weather app",
       description: "Weather Report is a responsive web application that allows users to get real-time weather updates for any city around the world. Built using HTML, CSS, and JavaScript, it fetches data from the OpenWeatherMap API and displays key weather parameters in a clean, user-friendly interface.",
       image: "/uploads/weather.png",
@@ -80,7 +80,7 @@ const Projects = () => {
       category: "web"
     },
     {
-      id: 6,
+      id: 7,
       title: "DSA Tracker",
       description: "A website that contains important questions for data structure and algorithms with many features like community, goals, compiler, etc.",
       image:"/uploads/dsa.png",
@@ -89,7 +89,7 @@ const Projects = () => {
       category: "web"
     },
     {
-      id: 7,
+      id: 8,
       title: "attendance-report-system",
       description: "Python-based application that uses OpenCV and face recognition to automatically mark student attendance through webcam input. It ensures accurate, real-time attendance logging and generates reports that can be saved for future records.",
       image: "/uploads/attendance.png",
@@ -98,13 +98,13 @@ const Projects = () => {
       category: "ml"
     },
     {
-      id: 9,
-      title: "Real-Time Data Pipeline",
-      description: "End-to-end streaming data pipeline that ingests Kafka events, processes them with Apache Spark Structured Streaming, and loads into Snowflake via dbt transformations. Orchestrated with Apache Airflow and containerized with Docker.",
-      image: "/uploads/placeholder.svg",
-      tags: ["Apache Kafka", "Apache Spark", "Airflow", "dbt", "Snowflake", "Docker"],
-      code: "https://github.com/divanshArora3",
-      category: "de"
+      id: 2,
+      title: "Retail Supply Chain Intelligence",
+      description: "End-to-end data pipeline utilizing Medallion Architecture to transform raw supply chain telemetry into actionable insights via Azure Databricks and Spark.",
+      image: "/uploads/supplychain.png",
+      tags: ["Azure Databricks", "PySpark", "ADLS Gen2", "Unity Catalog", "SQL"],
+      code: "https://github.com/divanshArora3/Retail-Supply-Chain-Intelligence-Platform",
+      category: "DE"
     },
     {
       id: 10,
@@ -117,7 +117,7 @@ const Projects = () => {
       category: "genai"
     },
     {
-      id: 8,
+      id: 9,
       title: "Obstacle avoiding robot",
       description: "A dashboard for monitoring and controlling smart home devices.",
       image:"/uploads/iot.png",

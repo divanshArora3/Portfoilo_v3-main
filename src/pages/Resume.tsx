@@ -8,16 +8,9 @@ import {
   Briefcase, 
   GraduationCap, 
   Code, 
-  Award,
   CheckCircle2,
-  Brain,
-  Cpu,
   Database,
-  Globe,
-  GitBranch,
-  Palette,
-  Wrench,
-  Target,
+  Cpu,
   Bot
 } from "lucide-react";
 
@@ -43,7 +36,7 @@ const Resume = () => {
       field: "Science Stream",
       duration: "2020 - 2022",
       percentage: "90%",
-      location: "Fazilka,Punjab, India",
+      location: "Fazilka, Punjab, India",
     },
   ];
 
@@ -66,106 +59,70 @@ const Resume = () => {
 
   const projects = [
     {
-      title: "DevDotJobs ",
-      description: "DevDotJobs is a full-stack job portal tailored for developers, enabling users to search for developer-specific roles and apply directly. Built with the MERN stack, it features secure authentication, dynamic job postings, role-based dashboards (admin, recruiter, applicant), and real-time notifications. The platform is designed for scalability and ease of use, making tech hiring streamlined and efficient.",
-      technologies: ["React, Node.js, Express.js, MongoDB, JWT, Tailwind CSS"],
-      duration: "09/2024 - 10/2024",
-      type: "Open-source",
+      title: "Retail Supply Chain Intelligence Platform",
+      description: "An enterprise-grade data architecture designed to optimize inventory management and forecast supply chain logistics through real-time streaming and batch processing.",
+      technologies: ["Databricks", "ADLS Gen2", "Event Hub", "Unity Catalog", "PySpark", "SQL"],
+      duration: "01/2026 - 04/2026",
+      type: "Capstone Project",
       accomplishments: [
-        " 🚀 Launched a complete MERN stack job portal from scratch, tailored specifically for the developer community.",
-        "🔐 Implemented secure role-based authentication using JWT for applicants, recruiters, and admins.",
-        "🧭 Built dynamic job posting and application flows, enabling recruiters to manage listings and view applicants.",
-        
-        "💬 Integrated real-time notifications and updates, improving user engagement and interactivity.",
-        "📊 Designed intuitive dashboards for all user roles to manage their data efficiently.",
-        "🧪 Tested and deployed the platform using Netlify and render, ensuring responsiveness and performance across devices.",
+        "Architected a robust data pipeline integrating streaming data via Event Hub and batch data stored in Azure Data Lake Storage (ADLS Gen2).",
+        "Implemented rigorous data governance, lineage tracking, and secure access controls utilizing Databricks Unity Catalog.",
+        "Engineered scalable PySpark transformations to process high-volume retail transactions, feeding downstream predictive analytics models."
       ]
     },
     {
-      title: "Divansh’s Blog",
-      description: "Divansh’s Blog is a personal full-stack blog application where developers can create, update, and manage articles with rich Markdown support. The platform includes user authentication, a clean UI, comment functionality, and a custom-built CMS experience. It’s optimized for performance and responsive design.",
-      technologies: ["React, Node.js, Express.js, MongoDB, JWT, Tailwind CSS"],
-      duration: "05/2025 - 06/2025",
-      type: "3nd Year Project",
+      title: "AutoFlow Well Regulation System",
+      description: "A data-driven regulation system developed for the Ministry of Jal Shakti (Smart India Hackathon). It uses LiDAR sensors and real-time data processing to automate groundwater monitoring and well regulation.",
+      technologies: ["IoT", "Python", "Data Visualization", "Real-time Analytics"],
+      duration: "03/2024 - 04/2024",
+      type: "Govt. Initiative",
       accomplishments: [
-        "🛠️ Developed a full-stack blogging platform with complete CRUD operations and Markdown support.",
-        "🔐 Integrated user authentication system using JWT for protected routes and admin functionalities.",
-        "📚 Built a clean, responsive UI using Tailwind CSS, ensuring smooth UX on all screen sizes.",
-       "✍️ Enabled rich text blogging experience with Markdown editor and custom blog previews.",
-      "🔍 Added SEO-friendly routing and metadata, enhancing visibility of blog posts on search engines.",
-       " 📦 Deployed successfully with persistent database integration and production-ready backend."
-        
-        
+        "Designed a real-time data pipeline to process LiDAR sensor inputs for accurate well depth monitoring.",
+        "Developed a centralized dashboard for visualization of groundwater levels across multiple nodes.",
+        "Optimized sensor data transmission protocols to ensure 99% uptime in remote areas."
       ]
     },
     {
-      title: "DSA Tracker",
-      description: "DSA Tracker is a comprehensive collection of important questions of data structure compiled together to boost your skills and prepare you for placement exams. Our website has many features that will help you to keep yourself motivated and involved in DSA.",
-      technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"],
-      duration: "04/2025 - 05/2023",
-      type: "Personal Project",
+      title: "SynchroChat",
+      description: "A high-performance full-stack chatting application featuring real-time bidirectional communication and instant message delivery.",
+      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "TailwindCSS"],
+      duration: "01/2024 - 02/2024",
+      type: "Full-Stack",
       accomplishments: [
-        "Important Topic Wise Questions",
-"Set your Goals",
-"Daily Questions",
-"Online Compiler",
-"Community Chat Section",
-"Local Storage",
-"Clean UI",
-"Fully Optimized for Mobile Devices",
+        "Implemented seamless real-time messaging using Socket.io for low-latency communication.",
+        "Architected a scalable backend with Node.js and Express to handle concurrent user connections.",
+        "Integrated secure user authentication and state management for a persistent chat experience."
       ]
     },
     {
-      title: "Recordmate",
-      description: "RECORDMATE is a productivity tool that allows users to join Google Meet meetings automatically, record them, and receive both the video recording and an AI-generated transcript — delivered straight to their inbox or dashboard. It’s ideal for students, professionals, educators, and remote teams who want to focus on participation instead of note-taking.",
-      technologies: ["next.js", "Node.js", "Express.js", "MongoDB", "OpenAI API", "Tailwind CSS"],
-      duration: "11/2024 - 01/2025",
-      type: "Research Project",
+      title: "IMU-Based Hand Rehab Glove",
+      description: "Published research on a portable glove designed for hand rehabilitation, utilizing IMU sensors to track movement and provide data-driven recovery feedback.",
+      technologies: ["Embedded Systems", "Signal Processing", "Python", "IEEE Publication"],
+      duration: "10/2023 - 02/2024",
+      type: "Research Manuscript",
       accomplishments: [
-       " Professionals missing meetings",
-        "📚 Students attending online classes",
-        "🧠 Researchers capturing interview transcripts",
-        "🎓 Educators needing auto-recording of session"
+        "Developed an algorithm to translate IMU sensor data into precise finger movement coordinates.",
+        "Published in IEEE Sensors Letters, detailing the design and clinical potential of the hardware.",
+        "Engineered a low-power, portable system suitable for at-home patient rehabilitation."
       ]
-    },
+    }
   ];
 
-  const certifications = [
-    {
-      name: "API Prototyping Learning Path",
-      issuer: "Postman",
-      date: "December 2024",
-      skills: "API Prototyping, API Testing, API Documentation",
-      credential: "PST-APL-2024"
+  const resumeHighlights = [
+    { 
+      title: "Data Engineering", 
+      description: "Expertise in PySpark, Databricks, and Cloud ETL pipelines (Azure/GCP/Snowflake)",
+      icon: <Database className="h-8 w-8 text-brand-purple" />
     },
-    {
-      name: "Career Essentials in Generative AI",
-      issuer: "Microsoft and LinkedIn",
-      date: "November 2024",
-      skills: "Generative AI, Prompt Engineering, LLM Applications",
-      credential: "MSLI-GAI-2024"
+    { 
+      title: "Generative AI & RAG", 
+      description: "Building production-grade AI systems with LLMs and Vector Databases",
+      icon: <Bot className="h-8 w-8 text-brand-purple" />
     },
-    {
-      name: "Learning Microsoft Power BI",
-      issuer: "Infosys Springboard",
-      date: "November 2024",
-      skills: "Microsoft Power BI, Data Visualization, Business Intelligence",
-      credential: "ISB-PBI-2024"
-    },
-
-    {
-      name: "Neural Networks and Deep Learning",
-      issuer: "Great Learning",
-      date: "January 2024",
-      skills: "Neural Networks, Deep Learning, AI Architecture",
-      credential: "GL-NNDL-2024"
-    },
-    {
-      name: "Real Life Machine Learning and Data Science Projects",
-      issuer: "Udemy",
-      date: "November 2022",
-      skills: "Machine Learning, Data Science, Practical Implementation",
-      credential: "UC-e1c70903-b810-4b6b-8749-eebd3345715"
+    { 
+      title: "Full-Stack Development", 
+      description: "Building robust end-to-end applications using MERN and Next.js ecosystems",
+      icon: <Code className="h-8 w-8 text-brand-purple" />
     },
   ];
 
@@ -178,29 +135,10 @@ const Resume = () => {
     { skill: "Critical Thinking", description: "Analytical evaluation of solutions and approaches" },
   ];
 
-  const resumeHighlights = [
-   
-    { 
-      title: "Full-Stack Developer", 
-      description: "Proficient in both front-end and back-end technologies, creating complete web solutions",
-      icon: <Code className="h-8 w-8 text-brand-purple" />
-    },
-    { 
-      title: "Web Developer", 
-      description: "Experienced in building web applications using react framework and plain HTML and CSS",
-      icon: <Cpu className="h-8 w-8 text-brand-purple" />
-    },
-    { 
-      title: "Data Structures & Algorithms", 
-      description: "Skilled in data structures and algorithms for efficient problem-solving and coding interviews",
-      icon: <Database className="h-8 w-8 text-brand-purple" />
-    },
-  ];
-
   const tabContent = {
     skills: (
       <div className="space-y-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {resumeHighlights.map((highlight, index) => (
             <motion.div
               key={highlight.title}
@@ -209,7 +147,7 @@ const Resume = () => {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="glass-panel p-6 rounded-lg flex items-start backdrop-blur-md border border-white/10"
             >
-              <div className="mr-4 bg-brand-purple/10 p-3 rounded-full">
+              <div className="mr-4 bg-brand-purple/10 p-3 rounded-full flex-shrink-0">
                 {highlight.icon}
               </div>
               <div>
@@ -241,12 +179,7 @@ const Resume = () => {
       </div>
     ),
     education: (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-        className="space-y-6"
-      >
+      <motion.div className="space-y-6">
         {education.map((edu, index) => (
           <motion.div
             key={edu.institution}
@@ -270,72 +203,18 @@ const Resume = () => {
               </div>
               <div className="flex flex-col items-start md:items-end text-right">
                 <div className="px-3 py-1 rounded-full text-sm bg-brand-purple/10 text-brand-purple">
-                  {edu.gpa}
+                  {edu.gpa || edu.percentage}
                 </div>
                 <div className="text-sm text-muted-foreground mt-2">{edu.duration}</div>
                 <div className="text-sm text-muted-foreground mt-1">{edu.location}</div>
               </div>
-            </div>
-            <div className="mt-4 pl-4 border-l-2 border-brand-purple/30">
-              <h4 className="font-medium mb-2">Key Courses:</h4>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {edu.institution.includes("Nit Jalandhar") ? (
-                  <>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Data Structures & Algorithms
-                    </li>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Computer Vision Systems
-                    </li>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Web Development
-                    </li>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Database Management Systems
-                    </li>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Deep Learning
-                    </li>
-                  </>
-                ) : (
-                  <>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Physics
-                    </li>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Chemistry
-                    </li>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Mathematics
-                    </li>
-                    <li className="text-sm flex items-center">
-                      <span className="h-1.5 w-1.5 bg-brand-purple rounded-full mr-2"></span>
-                      Computer Science
-                    </li>
-                    
-                  </>
-                )}
-              </ul>
             </div>
           </motion.div>
         ))}
       </motion.div>
     ),
     experience: (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-        className="space-y-6"
-      >
+      <motion.div className="space-y-6">
         {experience.map((exp, index) => (
           <motion.div
             key={exp.position}
@@ -377,12 +256,7 @@ const Resume = () => {
       </motion.div>
     ),
     projects: (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-        className="space-y-6"
-      >
+      <motion.div className="space-y-6">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
@@ -395,7 +269,7 @@ const Resume = () => {
               <div className="flex-1">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
               </div>
-              <div className="flex flex-wrap gap-2 items-center">
+              <div className="flex flex-wrap gap-2 items-center mt-2 md:mt-0">
                 <span className="text-xs py-1 px-3 bg-brand-purple/10 text-brand-purple rounded-full">
                   {project.type}
                 </span>
@@ -405,7 +279,6 @@ const Resume = () => {
               </div>
             </div>
             <p className="text-muted-foreground mb-4">{project.description}</p>
-            
             <div className="mb-4">
               <h4 className="font-medium mb-2">Key Accomplishments:</h4>
               <ul className="space-y-2">
@@ -417,58 +290,12 @@ const Resume = () => {
                 ))}
               </ul>
             </div>
-            
             <div className="flex flex-wrap gap-2 mt-4">
               {project.technologies.map((tech) => (
-                <span 
-                  key={tech} 
-                  className="text-xs py-1 px-3 bg-secondary rounded-full"
-                >
+                <span key={tech} className="text-xs py-1 px-3 bg-secondary/70 rounded-full text-secondary-foreground">
                   {tech}
                 </span>
               ))}
-            </div>
-          </motion.div>
-        ))}
-      </motion.div>
-    ),
-    certifications: (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
-      >
-        {certifications.map((cert, index) => (
-          <motion.div
-            key={cert.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="glass-panel p-6 rounded-lg"
-          >
-            <div className="flex items-start">
-              <div className="bg-brand-purple/10 p-2 rounded-full mr-4 flex-shrink-0">
-                <Award className="h-5 w-5 text-brand-purple" />
-              </div>
-              <div>
-                <h3 className="font-semibold">{cert.name}</h3>
-                <div className="text-sm text-muted-foreground mb-2">
-                  {cert.issuer} • {cert.date}
-                </div>
-                <div className="flex flex-wrap gap-2 mb-2">
-                  {cert.skills.split(', ').map((skill) => (
-                    <span key={skill} className="text-xs px-2 py-1 bg-secondary inline-block rounded-full">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-                {cert.credential && (
-                  <div className="text-xs text-muted-foreground">
-                    Credential ID: {cert.credential}
-                  </div>
-                )}
-              </div>
             </div>
           </motion.div>
         ))}
@@ -487,15 +314,15 @@ const Resume = () => {
             className="text-center mb-16"
           >
             <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-brand-purple/10 text-brand-purple mb-4 backdrop-blur-sm border border-brand-purple/20">
-              Resume
+              Portfolio & Experience
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              <AnimatedText text="Professional Experience" once />
+              <AnimatedText text="Professional Journey" once />
             </h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-muted-foreground">
-                I'm an aspiring developer specializing in web development, DSA, and machine learning.
-                My goal is to leverage these technologies to create innovative solutions for real-world problems.
+                Data Engineering Intern at Sigmoid with expertise in building scalable cloud data pipelines, 
+                architecting RAG-powered GenAI systems, and developing full-stack applications.
               </p>
             </div>
           </motion.div>
@@ -512,11 +339,10 @@ const Resume = () => {
           <div className="mb-8">
             <div className="flex flex-wrap justify-center gap-4">
               {[
-                { id: "skills", icon: <Code className="h-5 w-5" />, label: "Skills" },
-                { id: "education", icon: <GraduationCap className="h-5 w-5" />, label: "Education" },
+                { id: "skills", icon: <Cpu className="h-5 w-5" />, label: "Skills" },
                 { id: "experience", icon: <Briefcase className="h-5 w-5" />, label: "Experience" },
                 { id: "projects", icon: <Code className="h-5 w-5" />, label: "Projects" },
-                //{ id: "certifications", icon: <Award className="h-5 w-5" />, label: "Certifications" },
+                { id: "education", icon: <GraduationCap className="h-5 w-5" />, label: "Education" },
               ].map((tab) => (
                 <motion.button
                   key={tab.id}
