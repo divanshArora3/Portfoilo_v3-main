@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import recordmate from "/uploads/recordmate.png";
 import blog from "/uploads/blog.png";
 import devDotJobs from "/uploads/devdotjobs.png";
+import supplychain from "/uploads/supplychain.png"; // Add the correct path to the supply chain image
 
 const Index = () => {
   useEffect(() => {
@@ -22,6 +23,14 @@ const Index = () => {
      tags: ["Express.js","React.js", "Node.js", "MongoDB","JWT"],
       link: "/projects",
       code: "https://github.com/divanshArora3/dev.jobs"
+    },
+    {
+      title: "Retail Supply Chain Intelligence",
+      description: "End-to-end data pipeline utilizing Medallion Architecture to transform raw supply chain telemetry into actionable insights via Azure Databricks and Spark.",
+      image: supplychain, // Update this variable name to match your imports
+      tags: ["Azure Databricks", "PySpark", "ADLS Gen2", "Unity Catalog", "SQL"],
+      link: "/projects",
+      code: "https://github.com/divanshArora3/Retail-Supply-Chain-Intelligence-Platform"
     },
     {
       title: "Divansh's Blog",
