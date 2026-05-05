@@ -49,16 +49,17 @@ const Resume = () => {
 
   const experience = [
     {
-      position: "Software Developer intern",
-      company: "Sigmoid Analytics",
-      duration: "Jan 2026 - July-2026",
-      description: "Working as a software developer on various projects, specializing in web development and testing solutions.",
+      position: "Data Engineering Intern",
+      company: "Sigmoid",
+      duration: "Jan 2026 - July 2026",
+      description: "Specializing in building scalable AI data infrastructure and high-performance ETL pipelines leveraging Azure and GCP cloud ecosystems.",
       responsibilities: [
-       " Developed internal platforms using the MERN stack (MongoDB, Express.js, React.js, Node.js) for HR and political campaign management systems.",
-       " Built and tested RESTful APIs with Node.js and Express to support scalable backend services used by 30K+ field users",
-        "Designed responsive, modular frontend components in React.js for internal tools like Saral and Sangathan App",
-        " Used Git & GitHub for version control and collaborated on code via pull requests and branch workflows",
-        " Tested and debugged APIs using Postman, ensuring seamless integration between backend services and frontend dashboards"
+        "Developed and optimized end-to-end ETL/ELT pipelines using Azure Data Factory and GCP Dataflow to ingest and process multi-terabyte datasets.",
+        "Engineered data processing workflows using Apache Spark (PySpark) and Python, improving data transformation efficiency for downstream AI models.",
+        "Designed and maintained scalable data warehouses in Snowflake and BigQuery, implementing partitioned tables and optimized indexing for 30K+ concurrent users.",
+        "Built robust RESTful data APIs using Node.js to bridge the gap between cloud data lakes and internal analytics dashboards.",
+        "Collaborated on version-controlled data infrastructure (IaC) using Git, ensuring seamless deployment and integration across dev and production environments.",
+        "Automated data quality checks and monitoring scripts to ensure 99.9% data integrity for critical business intelligence reports."
       ]
     }
   ];

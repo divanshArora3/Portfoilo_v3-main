@@ -98,6 +98,25 @@ const Projects = () => {
       category: "ml"
     },
     {
+      id: 9,
+      title: "Real-Time Data Pipeline",
+      description: "End-to-end streaming data pipeline that ingests Kafka events, processes them with Apache Spark Structured Streaming, and loads into Snowflake via dbt transformations. Orchestrated with Apache Airflow and containerized with Docker.",
+      image: "/uploads/placeholder.svg",
+      tags: ["Apache Kafka", "Apache Spark", "Airflow", "dbt", "Snowflake", "Docker"],
+      code: "https://github.com/divanshArora3",
+      category: "de"
+    },
+    {
+      id: 10,
+      title: "Portfolio RAG Assistant",
+      description: "A Retrieval-Augmented Generation chatbot powered by Claude that answers questions about my portfolio, skills, projects, and experience. Uses vector embeddings for semantic search over resume data, showcasing production-grade GenAI architecture.",
+      image: "/uploads/placeholder.svg",
+      tags: ["RAG", "LangChain", "FAISS", "Claude API", "React.js"],
+      code: "https://github.com/divanshArora3",
+      demo: "/rag",
+      category: "genai"
+    },
+    {
       id: 8,
       title: "Obstacle avoiding robot",
       description: "A dashboard for monitoring and controlling smart home devices.",
@@ -122,6 +141,10 @@ const Projects = () => {
         return Brain;
       case "data":
         return BarChart;
+      case "de":
+        return Database;
+      case "genai":
+        return Bot;
       default:
         return Code;
     }
@@ -139,7 +162,9 @@ const Projects = () => {
     { id: "all", name: "All Projects" },
     { id: "web", name: "Web Development" },
     { id: "ai", name: "AI & ML" },
-    { id: "blockchain", name: "Blockchain" },
+    { id: "ml", name: "Machine Learning" },
+    { id: "DE", name: "Data Engineering" },
+    { id: "genai", name: "Gen AI" },
     { id: "iot", name: "IoT" }
   ];
 
